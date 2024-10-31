@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Multiplication Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Interactive Multiplication Table</h1>
+  <form id="multiplication-form">
+    <label>Starting Number (Horizontal): <input type="number" id="start-horiz" required></label>
+    <label>Ending Number (Horizontal): <input type="number" id="end-horiz" required></label>
+    <label>Starting Number (Vertical): <input type="number" id="start-vert" required></label>
+    <label>Ending Number (Vertical): <input type="number" id="end-vert" required></label>
+    <button type="button" onclick="handleGenerateTable()">Generate Table</button>
+  </form>
+  <div id="error-message"></div>
+  <div id="table-container" style="display: none;"></div>
+  <script src="script.js"></script>
+</body>
+</html>
